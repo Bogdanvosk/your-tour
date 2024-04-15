@@ -1,6 +1,8 @@
 @import 'variables';
 @import 'mixins';
 
+@import 'header/header';
+
 * {
 	@include reset;
 }
@@ -75,4 +77,18 @@ p {
 
 		@include p-mobile;
 	}
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+li {
+	@include list-reset;
+}
+
+a {
+	@include link-reset;
 }

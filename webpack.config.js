@@ -7,7 +7,7 @@ module.exports = {
 	output: {
 		filename: 'bundle.[contenthash:8].js',
 		path: path.join(__dirname, 'dist'),
-		assetModuleFilename: path.join('images', '[name].[contenthash:8][ext]'),
+		assetModuleFilename: 'assets/[name].[contenthash:8][ext]',
 		clean: true
 	},
 
@@ -16,13 +16,6 @@ module.exports = {
 			{
 				test: /\.(png|jpg|jpeg|gif)$/i,
 				type: 'asset/resource'
-			},
-			{
-				test: /\.svg$/,
-				type: 'asset/resource',
-				generator: {
-					filename: path.join('icons', '[name].[contenthash:8][ext]')
-				}
 			},
 			{
 				test: /\.html$/i,
@@ -44,7 +37,8 @@ module.exports = {
 		static: {
 			directory: path.join(__dirname, 'dist')
 		},
-		open: true
+		open: true,
+		hot: true
 	},
 
 	plugins: [
