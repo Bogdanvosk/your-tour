@@ -1,0 +1,78 @@
+@import 'variables';
+@import 'mixins';
+
+* {
+	@include reset;
+}
+
+body {
+	font-family: $primary-font;
+}
+
+h1,
+h2 {
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 6rem;
+	line-height: 1.09;
+	letter-spacing: 0.02em;
+
+	@media (max-width: $sm) {
+		font-size: 2.125rem;
+		line-height: 1.12;
+	}
+}
+
+h2 {
+	font-size: 3.6875rem;
+	line-height: 1.24;
+
+	@media (max-width: $sm) {
+		font-size: 2.125rem;
+		line-height: 1.12;
+	}
+}
+
+h3 {
+	font-weight: 500;
+	font-size: 2.1875rem;
+	line-height: 1.22;
+
+	@media (max-width: $sm) {
+		font-size: 1.4375rem;
+		line-height: 1.2;
+		letter-spacing: 0.04em;
+	}
+}
+
+p {
+	.normal,
+	.small {
+		font-weight: 400;
+		line-height: 1.42;
+	}
+
+	.big {
+		font-weight: 700;
+
+		font-size: 1.4375rem;
+		line-height: 1.22;
+
+		@include p-mobile;
+	}
+
+	.normal {
+		font-size: 1.25rem;
+
+		@include p-mobile;
+	}
+
+	.small {
+		font-size: 1.0625rem;
+		letter-spacing: -0.01em;
+
+		@include p-mobile;
+	}
+}

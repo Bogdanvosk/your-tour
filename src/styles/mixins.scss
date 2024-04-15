@@ -1,0 +1,12 @@
+@mixin p-mobile {
+	@media (max-width: $sm) {
+		font-size: 1rem;
+		line-height: 1.42;
+	}
+}
+
+@mixin reset {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
