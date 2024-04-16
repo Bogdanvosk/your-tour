@@ -2,6 +2,7 @@
 @import 'mixins';
 
 @import 'header/header';
+@import 'tour/tour';
 
 * {
 	@include reset;
@@ -9,6 +10,7 @@
 
 body {
 	font-family: $primary-font;
+	background-color: $color-beige-100;
 }
 
 h1,
@@ -79,10 +81,20 @@ p {
 	}
 }
 
+section {
+	margin-top: 8.4375rem;
+
+	@media (max-width: $sm) {
+		margin-top: 4.6875rem;
+	}
+}
+
 .container {
-	max-width: 1200px;
-	padding: 0 15px;
-	margin: 0 auto;
+	@include container(1170px, 55px);
+
+	@media (max-width: $sm) {
+		@include container(1170px, 20px);
+	}
 }
 
 li {

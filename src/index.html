@@ -17,7 +17,11 @@
 			<nav class="nav nav__header">
 				<div class="nav__wrapper">
 					<div class="nav__logo">
-						<img class="nav__logo-image" src="./assets/images/logo.svg" alt="logo">
+						<picture>
+							<source srcset="./assets/images/logo-640.svg" media="(max-width: 640px)">
+							<source srcset="./assets/images/logo.svg" media="(min-width: 640px)">
+							<img class="nav__logo-image" src="./assets/images/logo.svg" alt="logo">
+						</picture>
 					</div>
 					<div class="nav__menu">
 						<ul class="nav__menu-list">
@@ -60,6 +64,98 @@
 			</div>
 		</div>
 	</header>
+
+	<main>
+		<section class="tour">
+			<div class="container">
+				<div class="tour__wrapper">
+					<h2 class="tour__title">Выбери свой тур</h2>
+					<div class="tour__tabs">
+						<div role="button" class="tour__tab tour__tab--active">
+							<span>Популярные</span>
+						</div>
+						<div role="button" class="tour__tab">
+							<span>Авторские</span>
+						</div>
+						<div role="button" class="tour__tab">
+							<span>Походы</span>
+						</div>
+						<div role="button" class="tour__tab">
+							<span>Сплавы</span>
+						</div>
+						<div role="button" class="tour__tab">
+							<span>Велопрогулки</span>
+						</div>
+					</div>
+
+					<div class="tour__cards">
+						<div role="button" class="tour__card">
+							<div class="tour__content">
+								<h3 class="tour__card-title">Путешествие в горы</h3>
+								<p class="tour__price">от 80 000 руб</p>
+							</div>
+
+							<div class="tour__image__wrapper">
+								<img class="tour__image" src="./assets/images/tour/tour-1.jpg" alt="Tour">
+							</div>
+
+							<button class="tour__button">Подробнее</button>
+						</div>
+						<div role="button" class="tour__card">
+							<div class="tour__image__wrapper">
+								<img class="tour__image" src="./assets/images/tour/tour-2.jpg" alt="Tour">
+							</div>
+							<div class="tour__content">
+								<h3 class="tour__card-title">Путешествие в горы</h3>
+								<p class="tour__price">от 80 000 руб</p>
+							</div>
+							<button class="tour__button">Подробнее</button>
+						</div>
+						<div role="button" class="tour__card">
+							<div class="tour__image__wrapper">
+								<img class="tour__image" src="./assets/images/tour/tour-3.jpg" alt="Tour">
+							</div>
+							<div class="tour__content">
+								<h3 class="tour__card-title">Путешествие в горы</h3>
+								<p class="tour__price">от 80 000 руб</p>
+							</div>
+							<button class="tour__button">Подробнее</button>
+						</div>
+						<div role="button" class="tour__card">
+							<div class="tour__image__wrapper">
+								<img class="tour__image" src="./assets/images/tour/tour-4.jpg" alt="Tour">
+							</div>
+							<div class="tour__content">
+								<h3 class="tour__card-title">Путешествие в горы</h3>
+								<p class="tour__price">от 80 000 руб</p>
+							</div>
+							<button class="tour__button">Подробнее</button>
+						</div>
+						<div role="button" class="tour__card">
+							<div class="tour__image__wrapper">
+								<img class="tour__image" src="./assets/images/tour/tour-5.jpg" alt="Tour">
+							</div>
+							<div class="tour__content">
+								<h3 class="tour__card-title">Путешествие в горы</h3>
+								<p class="tour__price">от 80 000 руб</p>
+							</div>
+							<button class="tour__button">Подробнее</button>
+						</div>
+						<div role="button" class="tour__card">
+							<div class="tour__image__wrapper">
+								<img class="tour__image" src="./assets/images/tour/tour-6.jpg" alt="Tour">
+							</div>
+							<div class="tour__content">
+								<h3 class="tour__card-title">Путешествие в горы</h3>
+								<p class="tour__price">от 80 000 руб</p>
+							</div>
+							<button class="tour__button">Подробнее</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 </body>
 
 </html>

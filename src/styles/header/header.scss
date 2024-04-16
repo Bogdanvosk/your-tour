@@ -1,16 +1,24 @@
 .header {
-	height: 830px;
 	padding-top: 1.875rem;
+	padding-bottom: 7.5rem;
 	background-image: url('../assets/images/header-bg.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: $color-white;
+
+	@media (max-width: $sm) {
+		padding-bottom: 3.25rem;
+	}
 
 	&__main__wrapper {
 		margin-top: 7.5rem;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+
+		@media (max-width: $sm) {
+			margin-top: 3.25rem;
+		}
 	}
 
 	&__main-title {
@@ -24,6 +32,10 @@
 
 		font-size: 1.25rem;
 		line-height: 1.42;
+
+		@media (max-width: $sm) {
+			margin-top: 2.5rem;
+		}
 	}
 
 	&__main-button {
@@ -38,10 +50,14 @@
 		line-height: 1.42;
 		letter-spacing: -0.01em;
 
-		transition: all 0.3s ease;
+		transition: $main-transition;
 
 		&:hover {
 			background-color: darken($color-white, 20%);
+		}
+
+		@media (max-width: $sm) {
+			margin-top: 2.5rem;
 		}
 	}
 }
@@ -61,13 +77,29 @@
 		align-items: center;
 		justify-content: center;
 		gap: 3.125rem;
+
+		@media (max-width: $lg) {
+			gap: 1.875rem;
+		}
+
+		@media (max-width: $md) {
+			@include hidden;
+		}
 	}
 
-	&__menu-item {
+	&__menu-phone {
+		@media (max-width: $sm) {
+			font-size: 1rem;
+		}
+	}
+
+	&__menu-item,
+	&__menu-phone {
 		position: relative;
 	}
 
-	&__menu-item::before {
+	&__menu-item::before,
+	&__menu-phone::before {
 		content: '';
 		position: absolute;
 		left: 0;
@@ -76,10 +108,11 @@
 		opacity: 0;
 		height: 1px;
 		background-color: $color-white;
-		transition: all 0.3s ease;
+		transition: $main-transition;
 	}
 
-	&__menu-item:hover::before {
+	&__menu-item:hover::before,
+	&__menu-phone:hover::before {
 		width: 100%;
 		opacity: 1;
 	}
