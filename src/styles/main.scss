@@ -1,10 +1,6 @@
 @import 'variables';
 @import 'mixins';
 
-@import 'header/header';
-@import 'tour/tour';
-@import 'find/find';
-
 * {
 	@include reset;
 }
@@ -52,6 +48,26 @@ h3 {
 	}
 }
 
+textarea {
+	font-family: inherit;
+}
+
+section {
+	margin-top: 8.4375rem;
+
+	@media (max-width: $sm) {
+		margin-top: 4.6875rem;
+	}
+}
+
+li {
+	@include list-reset;
+}
+
+a {
+	@include link-reset;
+}
+
 p.normal,
 p.small {
 	font-weight: 400;
@@ -80,18 +96,6 @@ p.small {
 	@include p-mobile;
 }
 
-textarea {
-	font-family: inherit;
-}
-
-section {
-	margin-top: 8.4375rem;
-
-	@media (max-width: $sm) {
-		margin-top: 4.6875rem;
-	}
-}
-
 .container {
 	@include container(1170px, 55px);
 
@@ -100,10 +104,15 @@ section {
 	}
 }
 
-li {
-	@include list-reset;
+.title {
+	@include title;
 }
 
-a {
-	@include link-reset;
+.subtitle {
+	@include subtitle;
 }
+
+@import 'header/header';
+@import 'tour/tour';
+@import 'find/find';
+@import 'reviews/reviews';

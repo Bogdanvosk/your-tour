@@ -22,10 +22,6 @@
 	color: inherit;
 }
 
-@mixin nav-underline() {
-	
-}
-
 @mixin hidden {
 	position: absolute;
 	width: 1px;
@@ -43,4 +39,20 @@
 	max-width: calc($width + $padding * 2);
 	padding: 0 $padding;
 	margin: 0 auto;
+}
+
+@mixin title {
+	text-align: center;
+}
+
+@mixin subtitle {
+	max-width: 409px;
+	text-align: center;
+	margin: 0 auto;
+	color: $color-gray-300;
+	margin-top: 1.875rem;
+
+	@media (max-width: $sm) {
+		margin-top: 1.25rem;
+	}
 }

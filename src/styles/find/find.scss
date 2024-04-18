@@ -1,20 +1,4 @@
 .find {
-	&__title {
-		text-align: center;
-	}
-
-	&__subtitle {
-		max-width: 409px;
-		margin: 0 auto;
-		text-align: center;
-		color: $color-gray-300;
-		margin-top: 1.875rem;
-
-		@media (max-width: $sm) {
-			margin-top: 1.25rem;
-		}
-	}
-
 	&__form {
 		margin-top: 100px;
 		background-color: $color-white;

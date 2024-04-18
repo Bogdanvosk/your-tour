@@ -21,14 +21,10 @@
 		}
 	}
 
-	&__main-title {
-		text-align: center;
-	}
-
 	&__main-subtitle {
 		max-width: 610px;
-		text-align: center;
 		margin-top: 3.125rem;
+		color: $color-white;
 
 		@media (max-width: $sm) {
 			margin-top: 2.5rem;
