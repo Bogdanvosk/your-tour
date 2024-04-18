@@ -119,6 +119,10 @@
 		background-color: $color-green-400;
 	}
 
+	&__card:active &__button {
+		background-color: $color-orange-200;
+	}
+
 	&__card:hover &__button::after {
 		transform: translateX(5px);
 	}
