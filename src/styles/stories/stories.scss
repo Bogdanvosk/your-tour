@@ -100,6 +100,7 @@
 
 	&__item-link {
 		position: relative;
+		transition: $main-transition;
 
 		&::after {
 			content: '';

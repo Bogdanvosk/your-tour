@@ -1,0 +1,47 @@
+.action {
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1.875rem;
+	}
+
+	&__image {
+		overflow: hidden;
+		width: 370px;
+		height: 370px;
+		border-radius: 50px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+	}
+
+	&__content {
+		max-width: 371px;
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+	}
+
+	&__text {
+		color: $color-gray-300;
+	}
+
+	&__mail {
+		color: $color-black;
+		border-bottom: 1px solid transparent;
+		transition: $main-transition;
+
+		&:hover {
+			border-color: $color-black;
+		}
+
+		&:active {
+			color: $color-green-400;
+			border-color: $color-green-400;
+		}
+	}
+}
