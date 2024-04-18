@@ -56,3 +56,38 @@
 		margin-top: 1.25rem;
 	}
 }
+
+@mixin extra-button {
+	padding: 7px 60px 7px 20px;
+
+	border: none;
+	background-color: transparent;
+	border-radius: 50px;
+	transition: $main-transition;
+
+	font-weight: 700;
+	font-size: 1.4375rem;
+	line-height: 1.22;
+	color: $color-white;
+
+	@media (max-width: $sm) {
+		font-size: 1rem;
+		line-height: 1.42;
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 24px;
+		height: 26px;
+		background-image: url('../assets/icons/arrow-right.svg');
+		background-repeat: no-repeat;
+		right: 22px;
+		top: 13px;
+		transition: $main-transition;
+
+		@media (max-width: $sm) {
+			top: 10px;
+		}
+	}
+}

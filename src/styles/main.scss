@@ -112,8 +112,13 @@ p.small {
 	@include subtitle;
 }
 
+.button {
+	@include extra-button;
+}
+
 @import 'header/header';
 @import 'tour/tour';
 @import 'find/find';
 @import 'reviews/reviews';
 @import 'photos/photos';
+@import 'stories/stories';

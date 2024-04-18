@@ -266,6 +266,22 @@
 		opacity: 1;
 	}
 
+	&__terms {
+		a {
+			border-bottom: 1px solid transparent;
+			transition: $main-transition;
+
+			&:hover {
+				border-bottom: 1px solid $color-black;
+			}
+
+			&:active {
+				border-bottom: 1px solid $color-green-400;
+				color: $color-green-400;
+			}
+		}
+	}
+
 	&__terms-text {
 		color: $color-gray-300;
 	}
