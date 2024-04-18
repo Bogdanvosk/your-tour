@@ -3,6 +3,11 @@
 	padding: 1.875rem 0;
 	background-color: $color-beige-200;
 
+	@media (max-width: $sm) {
+		padding: 1.25rem 0;
+		margin-top: 4.6875rem;
+	}
+
 	&__title {
 		color: $color-gray-300;
 	}
@@ -11,12 +16,22 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		flex-wrap: wrap;
+
+		@media (max-width: $md) {
+			gap: 0.5rem;
+			justify-content: center;
+		}
 	}
 
 	&__socials {
 		display: flex;
 		align-items: center;
-		gap: 3.75rem;
+		gap: 1.5625rem;
+
+		@media (max-width: $sm) {
+			gap: 0.9375rem;
+		}
 	}
 
 	&__socials-item {
