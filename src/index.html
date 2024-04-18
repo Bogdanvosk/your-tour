@@ -92,7 +92,7 @@
 						<div role="button" class="tour__card">
 							<div class="tour__content">
 								<h3 class="tour__card-title">Путешествие в горы</h3>
-								<p class="tour__price">от 80 000 руб</p>
+								<p class="small tour__price">от 80 000 руб</p>
 							</div>
 
 							<div class="tour__image__wrapper">
@@ -107,7 +107,7 @@
 							</div>
 							<div class="tour__content">
 								<h3 class="tour__card-title">Путешествие в горы</h3>
-								<p class="tour__price">от 80 000 руб</p>
+								<p class="small tour__price">от 80 000 руб</p>
 							</div>
 							<button class="tour__button">Подробнее</button>
 						</div>
@@ -117,7 +117,7 @@
 							</div>
 							<div class="tour__content">
 								<h3 class="tour__card-title">Путешествие в горы</h3>
-								<p class="tour__price">от 80 000 руб</p>
+								<p class="small tour__price">от 80 000 руб</p>
 							</div>
 							<button class="tour__button">Подробнее</button>
 						</div>
@@ -127,7 +127,7 @@
 							</div>
 							<div class="tour__content">
 								<h3 class="tour__card-title">Путешествие в горы</h3>
-								<p class="tour__price">от 80 000 руб</p>
+								<p class="small tour__price">от 80 000 руб</p>
 							</div>
 							<button class="tour__button">Подробнее</button>
 						</div>
@@ -137,7 +137,7 @@
 							</div>
 							<div class="tour__content">
 								<h3 class="tour__card-title">Путешествие в горы</h3>
-								<p class="tour__price">от 80 000 руб</p>
+								<p class="small tour__price">от 80 000 руб</p>
 							</div>
 							<button class="tour__button">Подробнее</button>
 						</div>
@@ -147,11 +147,102 @@
 							</div>
 							<div class="tour__content">
 								<h3 class="tour__card-title">Путешествие в горы</h3>
-								<p class="tour__price">от 80 000 руб</p>
+								<p class="small tour__price">от 80 000 руб</p>
 							</div>
 							<button class="tour__button">Подробнее</button>
 						</div>
 					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="find">
+			<div class="container">
+				<div class="find__wrapper">
+					<h2 class="find__title">Собери свой тур</h2>
+					<p class="find__subtitle normal">Идейные соображения высшего порядка, а также рамки и место обучения кадров
+					</p>
+
+					<form class="find__form">
+						<div class="find__grid">
+
+							<label for="name" class="find__label">
+								<span class="find__label-span">Имя</span>
+								<input id="name" type="text" class="find__input" placeholder="Введите Ваше имя">
+							</label>
+
+							<label for="country" class="find__label find__label-select">
+								<span class="find__label-span">Направление</span>
+								<!-- <input id="name" type="text" class="find__input" placeholder="Куда хотите ехать"> -->
+								<!-- TODO: сделать выпадающий список с помощью JS-->
+								<div class="find__select__wrapper">
+									<select required class="find__select">
+										<option value="" hidden disabled selected>Куда хотите ехать</option>
+										<option>Сараево</option>
+										<option>Стамбул</option>
+										<option>Банско</option>
+										<option>Лейпциг</option>
+										<option>Пелопоннес</option>
+										<option>Будапешт</option>
+										<option>Палермо</option>
+										<option>Трансильвания</option>
+										<option>Котор</option>
+									</select>
+								</div>
+							</label>
+
+							<label for="email" class="find__label">
+								<span class="find__label-span">Email</span>
+								<input id="email" type="email" class="find__input" placeholder="example@mail.com">
+							</label>
+
+							<label for="phone" class="find__label">
+								<span class="find__label-span">Телефон</span>
+								<input id="phone" type="text" class="find__input" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+							</label>
+
+							<label for="date-from" class="find__label">
+								<span class="find__label-span">Дата от</span>
+								<input id="date-from" type="text" class="find__input" placeholder="ДД.ММ.ГГГГ">
+							</label>
+
+							<label for="date-to" class="find__label">
+								<span class="find__label-span">Дата до</span>
+								<input id="date-to" type="text" class="find__input" placeholder="ДД.ММ.ГГГГ">
+							</label>
+
+							<label class="find__label find__label-comment" for="comment">
+								<span class="find__label-span">Комментарий</span>
+								<textarea name="" id="comment" class="find__textarea"></textarea>
+							</label>
+
+							<label class="find__label find__label-ages" for="age">
+								<span class="find__label-span">Вам есть 18 лет?</span>
+								<div class="find__radio">
+									<label class="find__label find__label-check" for="age-yes">
+										<input class="find__input-radio" type="radio" name="age" id="age-yes">
+										<span class="find__label-span">Да</span>
+									</label>
+									<label class="find__label find__label-check" for="age-no">
+										<input class="find__input-radio" type="radio" name="age" id="age-no">
+										<span class="find__label-span">Нет</span>
+									</label>
+								</div>
+							</label>
+
+							<label class="find__label find__label-terms" for="terms">
+								<input class="find__input-check" type="checkbox" id="terms">
+								<p class="small find__terms">
+									<span class="find__terms-text">Нажимая кнопку, я принимаю условия</span> Лицензионного договора
+								</p>
+							</label>
+
+							<div class="find__buttons">
+								<button type="submit" class="find__button">Найти тур</button>
+								<button type="reset" class="find__button find__button-reset">Сбросить</button>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</section>

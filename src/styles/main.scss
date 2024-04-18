@@ -3,6 +3,7 @@
 
 @import 'header/header';
 @import 'tour/tour';
+@import 'find/find';
 
 * {
 	@include reset;
@@ -51,34 +52,36 @@ h3 {
 	}
 }
 
-p {
-	.normal,
-	.small {
-		font-weight: 400;
-		line-height: 1.42;
-	}
+p.normal,
+p.small {
+	font-weight: 400;
+	line-height: 1.42;
+}
 
-	.big {
-		font-weight: 700;
+p.big {
+	font-weight: 700;
 
-		font-size: 1.4375rem;
-		line-height: 1.22;
+	font-size: 1.4375rem;
+	line-height: 1.22;
 
-		@include p-mobile;
-	}
+	@include p-mobile;
+}
 
-	.normal {
-		font-size: 1.25rem;
+p.normal {
+	font-size: 1.25rem;
 
-		@include p-mobile;
-	}
+	@include p-mobile;
+}
 
-	.small {
-		font-size: 1.0625rem;
-		letter-spacing: -0.01em;
+p.small {
+	font-size: 1.0625rem;
+	letter-spacing: -0.01em;
 
-		@include p-mobile;
-	}
+	@include p-mobile;
+}
+
+textarea {
+	font-family: inherit;
 }
 
 section {

@@ -175,12 +175,9 @@
 	}
 
 	&__price {
-		font-size: 1.0625rem;
-		line-height: 1.42;
 		margin-top: 1rem;
 
 		@media (max-width: $sm) {
-			font-size: 1rem;
 			margin-top: 0.8125rem;
 		}
 	}
