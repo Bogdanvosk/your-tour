@@ -1,5 +1,4 @@
 .header {
-	padding-top: 0.9375rem;
 	padding-bottom: 7.5rem;
 	background-image: url('../assets/images/header-bg.png');
 	background-repeat: no-repeat;
@@ -12,6 +11,7 @@
 
 	&__main__wrapper {
 		margin-top: 7.5rem;
+
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -60,14 +60,49 @@
 	}
 }
 
+.hidden-nav {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.visible-nav {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: all;
+}
+
 .nav {
 	font-size: 1.25rem;
 	line-height: 1.42;
+	padding-top: 0.9375rem;
+
+	&__header--fixed {
+		@extend .hidden-nav;
+
+		transition: $main-transition;
+
+		backdrop-filter: blur(54px);
+		background-color: rgba(243, 239, 232, 0.6);
+		padding: 1.75rem 0;
+		position: fixed;
+		width: 100%;
+		z-index: 20;
+	}
 
 	&__wrapper {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+
+		&--fixed {
+			color: $color-black;
+			@include container(1170px, 55px);
+
+			@media (max-width: $sm) {
+				@include container(1170px, 20px);
+			}
+		}
 	}
 
 	&__menu-list {
@@ -91,11 +126,6 @@
 		}
 	}
 
-	&__menu-item,
-	&__menu-phone {
-		position: relative;
-	}
-
 	&__menu-item::before,
 	&__menu-phone::before {
 		content: '';
@@ -109,9 +139,20 @@
 		transition: $main-transition;
 	}
 
+	&__menu-item,
+	&__menu-phone {
+		position: relative;
+
+		&--fixed::before {
+			background-color: $color-black;
+		}
+	}
+
 	&__menu-item:hover::before,
 	&__menu-phone:hover::before {
 		width: 100%;
 		opacity: 1;
 	}
+
+	// FIXED NAVBAR
 }

@@ -19,6 +19,7 @@
 		font-size: 1.4375rem;
 		line-height: 1.22;
 		position: relative;
+		transition: $main-transition;
 
 		@media (max-width: $sm) {
 			font-size: 16px;
@@ -50,18 +51,10 @@
 			color: $color-orange-200;
 		}
 
-		&--active::after {
-			content: '';
-			position: absolute;
-			left: 0;
-			bottom: -6px;
-			height: 2px;
+		&--active::before {
 			width: 100%;
+			opacity: 1;
 			background-color: $color-orange-200;
-
-			@media (max-width: $sm) {
-				bottom: 0;
-			}
 		}
 	}
 

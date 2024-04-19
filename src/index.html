@@ -6,6 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="./assets/icons/favicon-32.png">
 	<title>Your tour</title>
+	<meta property="og:title" content="Your tour">
+	<meta name="description" content="Идейные соображения высшего порядка,а также рамки и место обучения кадров">
+	<meta property="og:description" content="Идейные соображения высшего порядка,а также рамки и место обучения кадров">
+	<meta name="keywords" content="путешествие, собери свой тур, автостопом">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -13,6 +17,44 @@
 
 <body>
 	<header class="header">
+		<nav class="nav nav__header nav__header--fixed">
+			<div class="nav__wrapper nav__wrapper--fixed">
+				<div class="nav__logo">
+					<picture>
+						<source srcset="./assets/images/logo-black-640.svg" media="(max-width: 640px)">
+						<source srcset="./assets/images/logo-black.svg" media="(min-width: 640px)">
+						<img class="nav__logo-image" src="./assets/images/logo.svg" alt="logo">
+					</picture>
+				</div>
+				<div class="nav__menu">
+					<ul class="nav__menu-list">
+						<li class="nav__menu-item nav__menu-item--fixed">
+							<a href="#tour" class="nav__menu-link">
+								Туры
+							</a>
+						</li>
+						<li class="nav__menu-item nav__menu-item--fixed">
+							<a href="#find" class="nav__menu-link">
+								Создать тур
+							</a>
+						</li>
+						<li class="nav__menu-item nav__menu-item--fixed">
+							<a href="#reviews" class="nav__menu-link">
+								Отзывы
+							</a>
+						</li>
+						<li class="nav__menu-item nav__menu-item--fixed">
+							<a href="#stories" class="nav__menu-link">
+								Истории
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="nav__menu-phone nav__menu-phone--fixed">
+					<a href="tel:+79999999999">+7 999 999 99 99</a>
+				</div>
+			</div>
+		</nav>
 		<div class="container">
 			<nav class="nav nav__header">
 				<div class="nav__wrapper">
@@ -26,22 +68,22 @@
 					<div class="nav__menu">
 						<ul class="nav__menu-list">
 							<li class="nav__menu-item">
-								<a href="#" class="nav__menu-link">
+								<a href="#tour" class="nav__menu-link">
 									Туры
 								</a>
 							</li>
 							<li class="nav__menu-item">
-								<a href="#" class="nav__menu-link">
+								<a href="#find" class="nav__menu-link">
 									Создать тур
 								</a>
 							</li>
 							<li class="nav__menu-item">
-								<a href="#" class="nav__menu-link">
+								<a href="#reviews" class="nav__menu-link">
 									Отзывы
 								</a>
 							</li>
 							<li class="nav__menu-item">
-								<a href="#" class="nav__menu-link">
+								<a href="#stories" class="nav__menu-link">
 									Истории
 								</a>
 							</li>
@@ -51,6 +93,10 @@
 						<a href="tel:+79999999999">+7 999 999 99 99</a>
 					</div>
 				</div>
+			</nav>
+
+
+
 			</nav>
 			<div class="header__main">
 				<div class="header__main__wrapper">
@@ -177,15 +223,16 @@
 								<div class="find__select__wrapper">
 									<select required class="find__select">
 										<option value="" hidden disabled selected>Куда хотите ехать</option>
-										<option>Сараево</option>
-										<option>Стамбул</option>
-										<option>Банско</option>
-										<option>Лейпциг</option>
-										<option>Пелопоннес</option>
-										<option>Будапешт</option>
-										<option>Палермо</option>
-										<option>Трансильвания</option>
-										<option>Котор</option>
+										<option value="Пункт выбран" hidden disabled>Пункт выбран</option>
+										<option value="Сараево">Сараево</option>
+										<option value="Стамбул">Стамбул</option>
+										<option value="Банско">Банско</option>
+										<option value="Лейпциг">Лейпциг</option>
+										<option value="Пелопоннес">Пелопоннес</option>
+										<option value="Будапешт">Будапешт</option>
+										<option value="Палермо">Палермо</option>
+										<option value="Трансильвания">Трансильвания</option>
+										<option value="Котор">Котор</option>
 									</select>
 								</div>
 							</label>
