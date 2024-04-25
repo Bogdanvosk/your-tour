@@ -34,40 +34,38 @@
 		}
 	}
 
-	&__socials-item {
-		position: relative;
-
+	&__socials-link {
 		display: flex;
 		align-items: center;
 		gap: 0.625rem;
-	}
 
-	&__socials-link {
-		transition: $main-transition;
-		position: relative;
-
-		&::after {
-			content: '';
-			width: 0;
-			height: 1px;
-			position: absolute;
-			left: 0;
-			bottom: 0px;
-			background-color: $color-black;
-			opacity: 0;
+		span {
 			transition: $main-transition;
+			position: relative;
+
+			&::after {
+				content: '';
+				width: 0;
+				height: 1px;
+				position: absolute;
+				left: 0;
+				bottom: -2px;
+				background-color: $color-black;
+				opacity: 0;
+				transition: $main-transition;
+			}
 		}
 
-		&:hover::after {
+		&:hover span::after {
 			width: 100%;
 			opacity: 1;
 		}
 
-		&:active {
+		&:active span {
 			color: $color-orange-200;
 		}
 
-		&:active::after {
+		&:active span::after {
 			background-color: $color-orange-200;
 		}
 	}
