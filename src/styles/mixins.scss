@@ -46,7 +46,7 @@
 }
 
 @mixin subtitle {
-	max-width: 409px;
+	max-width: 410px;
 	text-align: center;
 	margin: 0 auto;
 	color: $color-gray-300;
@@ -66,8 +66,8 @@
 	transition: $main-transition;
 
 	font-weight: 700;
-	font-size: 1.4375rem;
-	line-height: 1.22;
+	font-size: 23px;
+	line-height: 28px;
 	color: $color-white;
 
 	@media (max-width: $sm) {

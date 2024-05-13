@@ -1,0 +1,59 @@
+.head {
+	height: 100vh;
+	margin-top: 0;
+	background-image: url('../assets/images/header-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left center;
+	color: $color-white;
+	padding-top: 12rem;
+	position: relative;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media (max-width: $sm) {
+			margin-top: 3.25rem;
+		}
+	}
+
+	&__subtitle {
+		max-width: 610px;
+		margin-top: 3.125rem;
+		color: $color-white;
+
+		@media (max-width: $sm) {
+			margin-top: 2.5rem;
+		}
+	}
+
+	&__button {
+		cursor: pointer;
+		border: none;
+		margin-top: 3.125rem;
+		border-radius: 10px;
+		padding: 5px 20px;
+		background-color: $color-white;
+
+		font-size: 1.0625rem;
+		line-height: 1.42;
+		letter-spacing: -0.01em;
+
+		transition: $main-transition;
+
+		&:hover {
+			background-color: $color-orange-200;
+		}
+
+		&:active {
+			background-color: $color-orange-100;
+		}
+
+		@media (max-width: $sm) {
+			margin-top: 2.5rem;
+			font-size: 1rem;
+		}
+	}
+}

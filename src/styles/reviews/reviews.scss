@@ -1,9 +1,18 @@
 .reviews {
+	&__title {
+		max-width: 530px;
+		margin: 0 auto;
+	}
+
 	&__items {
 		margin-top: 6.25rem;
 		display: flex;
 		justify-content: center;
 		gap: 1.875rem;
+
+		@media (max-width: $lg) {
+			gap: 1.125rem;
+		}
 
 		@media (max-width: $md) {
 			flex-direction: column;
@@ -11,10 +20,12 @@
 
 		@media (max-width: $sm) {
 			gap: 1.125rem;
+			margin-top: 3.125rem;
 		}
 	}
 
 	&__item {
+		max-width: 570px;
 		border-radius: 50px;
 		padding: 2.5rem;
 		background-color: $color-beige-200;
@@ -23,14 +34,18 @@
 		flex-direction: column;
 		justify-content: space-between;
 
+		@media (max-width: $lg) {
+			width: 100%;
+		}
+
 		@media (max-width: $sm) {
-			padding: 1.25rem;
+			padding: 21px;
 			border-radius: 20px;
 		}
 	}
 
 	&__text p {
-		margin-top: 2rem;
+		margin-top: 1.7rem;
 	}
 
 	&__text p:first-child {
@@ -45,6 +60,7 @@
 
 		@media (max-width: $sm) {
 			margin-top: 2.5rem;
+			align-items: end;
 		}
 	}
 

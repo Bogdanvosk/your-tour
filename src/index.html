@@ -16,47 +16,47 @@
 </head>
 
 <body>
-	<header class="header">
-		<nav class="nav nav__header nav__header--fixed">
-			<div class="nav__wrapper nav__wrapper--fixed">
-				<div class="nav__logo">
-					<a href="#" class="nav__logo-link">
-						<picture>
-							<source srcset="./assets/images/logo-black-640.svg" media="(max-width: 640px)">
-							<source srcset="./assets/images/logo-black.svg" media="(min-width: 640px)">
-							<img class="nav__logo-image" src="./assets/images/logo.svg" alt="logo">
-						</picture>
-					</a>
-				</div>
-				<div class="nav__menu">
-					<ul class="nav__menu-list">
-						<li class="nav__menu-item nav__menu-item--fixed">
-							<a href="#tour" class="nav__menu-link">
-								Туры
-							</a>
-						</li>
-						<li class="nav__menu-item nav__menu-item--fixed">
-							<a href="#find" class="nav__menu-link">
-								Создать тур
-							</a>
-						</li>
-						<li class="nav__menu-item nav__menu-item--fixed">
-							<a href="#reviews" class="nav__menu-link">
-								Отзывы
-							</a>
-						</li>
-						<li class="nav__menu-item nav__menu-item--fixed">
-							<a href="#stories" class="nav__menu-link">
-								Истории
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="nav__menu-phone nav__menu-phone--fixed">
-					<a href="tel:+79999999999">+7 999 999 99 99</a>
-				</div>
+	<nav class="nav nav__header nav__header--fixed">
+		<div class="nav__wrapper nav__wrapper--fixed">
+			<div class="nav__logo">
+				<a href="#" class="nav__logo-link">
+					<picture>
+						<source srcset="./assets/images/logo-black-640.svg" media="(max-width: 640px)">
+						<source srcset="./assets/images/logo-black.svg" media="(min-width: 640px)">
+						<img class="nav__logo-image" src="./assets/images/logo.svg" alt="logo">
+					</picture>
+				</a>
 			</div>
-		</nav>
+			<div class="nav__menu">
+				<ul class="nav__menu-list">
+					<li class="nav__menu-item nav__menu-item--fixed">
+						<a href="#tour" class="nav__menu-link">
+							Туры
+						</a>
+					</li>
+					<li class="nav__menu-item nav__menu-item--fixed">
+						<a href="#find" class="nav__menu-link">
+							Создать тур
+						</a>
+					</li>
+					<li class="nav__menu-item nav__menu-item--fixed">
+						<a href="#reviews" class="nav__menu-link">
+							Отзывы
+						</a>
+					</li>
+					<li class="nav__menu-item nav__menu-item--fixed">
+						<a href="#stories" class="nav__menu-link">
+							Истории
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="nav__menu-phone nav__menu-phone--fixed">
+				<a href="tel:+79999999999">+7 999 999 99 99</a>
+			</div>
+		</div>
+	</nav>
+	<header class="header">
 		<div class="container">
 			<nav class="nav nav__header">
 				<div class="nav__wrapper">
@@ -98,24 +98,23 @@
 					</div>
 				</div>
 			</nav>
-
-
-
-			</nav>
-			<div class="header__main">
-				<div class="header__main__wrapper">
-					<h1 class="header__main-title title">Идеальные путешествия существуют</h1>
-					<p class="header__main-subtitle subtitle normal">
-						Идейные соображения высшего порядка, а также рамки и место обучения
-						кадров
-					</p>
-					<button type="button" class="header__main-button">Найти тур</button>
-				</div>
-			</div>
 		</div>
 	</header>
 
-	<main>
+	<main class="main">
+		<section class="head">
+			<div class="container">
+				<div class="head__wrapper">
+					<h1 class="head__title title">Идеальные путешествия существуют</h1>
+					<p class="head__subtitle subtitle normal">
+						Идейные соображения высшего порядка, а также рамки и место обучения
+						кадров
+					</p>
+					<button type="button" class="head__button">Найти тур</button>
+				</div>
+			</div>
+		</section>
+
 		<section class="tour">
 			<div class="container">
 				<div class="tour__wrapper">
@@ -248,17 +247,18 @@
 
 							<label for="phone" class="find__label">
 								<span class="find__label-span">Телефон</span>
-								<input id="phone" type="text" class="find__input" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+								<input type="number" id="phone" max="99999999999" class="find__input"
+									placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
 							</label>
 
 							<label for="date-from" class="find__label">
 								<span class="find__label-span">Дата от</span>
-								<input id="date-from" type="text" class="find__input" placeholder="ДД.ММ.ГГГГ">
+								<input id="date-from" type="date" max="9999-12-31" class="find__input" placeholder="ДД.ММ.ГГГГ">
 							</label>
 
 							<label for="date-to" class="find__label">
 								<span class="find__label-span">Дата до</span>
-								<input id="date-to" type="text" class="find__input" placeholder="ДД.ММ.ГГГГ">
+								<input id="date-to" type="date" max="9999-12-31" class="find__input" placeholder="ДД.ММ.ГГГГ">
 							</label>
 
 							<label class="find__label find__label-comment" for="comment">
@@ -427,13 +427,13 @@
 							<div class="stories__item__footer stories__item__footer--big">
 								<button type="button" class="stories__item-button button">Подробнее</button>
 								<ul class="stories__item-links">
-									<li class="stories__item-link">
-										<a href="#">Instagram</a>
+									<li class="stories__item-link normal">
+										<a href="#">instagram</a>
 									</li>
-									<li class="stories__item-link">
-										<a href="#">Facebook</a>
+									<li class="stories__item-link normal">
+										<a href="#">facebook</a>
 									</li>
-									<li class="stories__item-link">
+									<li class="stories__item-link normal">
 										<a href="#">Youtube</a>
 									</li>
 								</ul>
@@ -453,10 +453,10 @@
 								<button type="button" class="stories__item-button button">Подробнее</button>
 
 								<ul class="stories__item-links">
-									<li class="stories__item-link">
-										<a href="#">Instagram</a>
+									<li class="stories__item-link normal">
+										<a href="#">instagram</a>
 									</li>
-									<li class="stories__item-link">
+									<li class="stories__item-link normal">
 										<a href="#">ВКонтакте</a>
 									</li>
 								</ul>
@@ -476,13 +476,13 @@
 								<button type="button" class="stories__item-button button">Подробнее</button>
 
 								<ul class="stories__item-links">
-									<li class="stories__item-link">
-										<a href="#">Instagram</a>
+									<li class="stories__item-link normal">
+										<a href="#">instagram</a>
 									</li>
-									<li class="stories__item-link">
-										<a href="#">Facebook</a>
+									<li class="stories__item-link normal">
+										<a href="#">facebook</a>
 									</li>
-									<li class="stories__item-link">
+									<li class="stories__item-link normal">
 										<a href="#">ВКонтакте</a>
 									</li>
 								</ul>
@@ -518,23 +518,23 @@
 
 				<ul class="footer__socials">
 					<li class="footer__socials-item">
-						<a href="#" class="footer__socials-link">
-							<img src="./assets/icons/inst.svg" alt="Instagram">
-							<span>Instagram</span>
+						<a href="#" class="footer__socials-link normal">
+							<img src="./assets/icons/inst.svg" alt="instagram">
+							<span>instagram</span>
 						</a>
 					</li>
 					<li class="footer__socials-item">
 
-						<a href="#" class="footer__socials-link">
-							<img src="./assets/icons/fb.svg" alt="Facebook">
-							<span>Facebook</span>
+						<a href="#" class="footer__socials-link normal">
+							<img src="./assets/icons/fb.svg" alt="facebook">
+							<span>facebook</span>
 						</a>
 					</li>
 					<li class="footer__socials-item">
 
-						<a href="#" class="footer__socials-link">
+						<a href="#" class="footer__socials-link normal">
 							<img src="./assets/icons/vk.svg" alt="VKontakte">
-							<span>VKontakte</span>
+							<span>vkontakte</span>
 						</a>
 					</li>
 				</ul>

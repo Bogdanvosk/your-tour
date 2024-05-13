@@ -69,13 +69,13 @@ a {
 	@include link-reset;
 }
 
-p.normal,
-p.small {
+.normal,
+.small {
 	font-weight: 400;
 	line-height: 1.42;
 }
 
-p.big {
+.big {
 	font-weight: 700;
 
 	font-size: 1.4375rem;
@@ -84,13 +84,13 @@ p.big {
 	@include p-mobile;
 }
 
-p.normal {
+.normal {
 	font-size: 1.25rem;
 
 	@include p-mobile;
 }
 
-p.small {
+.small {
 	font-size: 1.0625rem;
 	letter-spacing: -0.01em;
 
@@ -100,8 +100,12 @@ p.small {
 .container {
 	@include container(1170px, 55px);
 
+	@media (max-width: $lg) {
+		@include container(1170px, 53px)
+	}
+
 	@media (max-width: $sm) {
-		@include container(1170px, 20px);
+		@include container(1170px, 21px);
 	}
 }
 
@@ -117,7 +121,14 @@ p.small {
 	@include extra-button;
 }
 
+.main {
+	position:static;
+	z-index: 5;
+}
+
+
 @import 'header/header';
+@import 'head/head';
 @import 'tour/tour';
 @import 'find/find';
 @import 'reviews/reviews';

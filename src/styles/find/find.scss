@@ -6,7 +6,7 @@
 		padding: 4.375rem;
 
 		@media (max-width: $lg) {
-			padding: 3.75rem;
+			padding: 3.55rem;
 		}
 
 		@media (max-width: $sm) {
@@ -19,10 +19,10 @@
 	&__grid {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		gap: 33px 30px;
+		gap: 31px 30px;
 
 		@media (max-width: $lg) {
-			gap: 2.0625rem 1.25rem;
+			gap: 1.9625rem 1.25rem;
 		}
 
 		@media (max-width: $md) {
@@ -38,6 +38,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 0.5rem;
+
+		@media (max-width: $sm) {
+			gap: 0.4375rem;
+		}
 		&-span {
 			font-size: 1.25rem;
 			line-height: 1.42;
@@ -58,6 +62,7 @@
 	&__input,
 	&__textarea,
 	&__select {
+		font-family: inherit;
 		outline: none;
 		background-color: $color-beige-100;
 		border: 1px solid $color-beige-200;
@@ -68,12 +73,12 @@
 		line-height: 1.42;
 		color: $color-black;
 
+		transition: $main-transition;
+
 		@media (max-width: $sm) {
 			font-size: 1rem;
 			padding: 0.625rem;
 		}
-
-		transition: $main-transition;
 
 		&:hover {
 			background-color: $color-beige-200;
@@ -93,6 +98,12 @@
 				font-size: 1rem;
 			}
 		}
+	}
+
+	&__input::-webkit-outer-spin-button,
+	&__input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
 	}
 
 	&__select {
@@ -135,11 +146,12 @@
 
 	&__textarea {
 		max-width: 100%;
-		height: 152px;
-		resize: none;
+		min-height: 152px;
+		resize: vertical;
 
 		@media (max-width: $sm) {
-			height: 132px;
+			resize: none;
+			min-height: 132px;
 		}
 	}
 
@@ -213,10 +225,31 @@
 	&__label-terms {
 		display: block;
 		position: relative;
-		padding-left: 37px;
+		padding-left: 45px;
+
+		@media (max-width: $lg) {
+			padding-left: 37px;
+		}
 
 		@media (max-width: $sm) {
 			padding-left: 30px;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			width: 22px;
+			height: 22px;
+			background: transparent;
+			border: 2px solid $color-black;
+			border-radius: 5px;
+			left: 0;
+			top: -1px;
+
+			@media (max-width: $sm) {
+				width: 18px;
+				height: 18px;
+			}
 		}
 	}
 
@@ -226,43 +259,34 @@
 		& + p::before {
 			content: '';
 			position: absolute;
-			left: 0;
-			top: 0;
-			width: 26px;
-			height: 26px;
-			background-image: url('../assets/icons/checkbox-icon/checkbox-rect.svg');
-			background-repeat: no-repeat;
-			background-position: center;
-
-			@media (max-width: $sm) {
-				background-image: url('../assets/icons/checkbox-icon/checkbox-rect-mobile.svg');
-				width: 20px;
-				height: 20px;
-			}
+			left: 5px;
+			top: 13px;
+			width: 8px;
+			height: 2px;
+			background-color: $color-black;
+			border-radius: 5px;
+			transform: rotate(45deg);
+			opacity: 0;
+			transition: $main-transition;
 		}
 
 		& + p::after {
 			content: '';
 			position: absolute;
-			left: 0;
-			top: 0;
-			width: 26px;
-			height: 26px;
-			background-image: url('../assets/icons/checkbox-icon/checkbox-check.svg');
-			background-repeat: no-repeat;
-			background-position: center;
+			left: 9px;
+			top: 12px;
+			width: 12px;
+			height: 2px;
+			background-color: $color-black;
+			border-radius: 5px;
+			transform: rotate(-45deg);
 			opacity: 0;
 			transition: $main-transition;
-
-			@media (max-width: $sm) {
-				background-image: url('../assets/icons/checkbox-icon/checkbox-check-mobile.svg');
-				width: 20px;
-				height: 20px;
-			}
 		}
 	}
 
-	&__label-terms &__input-check:checked + p::after {
+	&__label-terms &__input-check:checked + p::after,
+	&__label-terms &__input-check:checked + p::before {
 		opacity: 1;
 	}
 
@@ -300,7 +324,7 @@
 		cursor: pointer;
 		border: none;
 		background-color: $color-green-400;
-		padding: 0.9375rem 4.375rem;
+		padding: 0.9375rem 4.4375rem;
 		color: $color-white;
 
 		font-size: 1.25rem;

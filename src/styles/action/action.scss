@@ -8,6 +8,10 @@
 		@media (max-width: $md) {
 			flex-direction: column;
 		}
+
+		@media (max-width: $sm) {
+			gap: 2.125rem
+		}
 	}
 
 	&__image {
@@ -46,6 +50,8 @@
 		color: $color-gray-300;
 		@media (max-width: $sm) {
 			text-align: center;
+			max-width: 291px;
+			margin: 0 auto;
 		}
 	}
 
