@@ -2,47 +2,51 @@
 	&__items {
 		margin: 0 auto;
 		margin-top: 6.25rem;
-		padding: 0 1.875rem;
+		padding: 0 1.575rem;
 		display: flex;
-		align-items: stretch;
 		justify-content: center;
 		flex-wrap: wrap;
-		gap: 1.875rem;
+		gap: 1vw;
 
 		@media (max-width: $lg) {
-			gap: 1.875rem 1.25rem;
+			column-gap: 2vw;
+			row-gap: 3vw;
+			padding: 0;
 		}
 
 		@media (max-width: $sm) {
-			gap: 1.125rem;
-			padding: 0 1.25rem;
+			column-gap: 2.77vw;
+			row-gap: 5vw;
+			margin-top: 3.125rem;
 		}
 	}
 
 	&__item {
-		width: 426px;
-		height: 300px;
+		width: 23vw;
+		height: 15.6vw;
 		overflow: hidden;
-		border-radius: 50px;
+		border-radius: 2.6vw;
 
 		@media (max-width: $lg) {
-			width: 308px;
+			width: 30.8vw;
+			height: 29.2vw;
+			border-radius: 4.9vw;
 		}
 
 		@media (max-width: $sm) {
-			border-radius: 20px;
-			width: 150px;
-			height: 110px;
+			width: 41.66vw;
+			height: 30.6vw;
+			border-radius: 5.6vw;
 		}
 
 		&--narrow {
-			width: 335px;
+			width: 18.1vw;
 			@media (max-width: $lg) {
-				width: 226px;
+				width: 22.6vw;
 			}
 
 			@media (max-width: $sm) {
-				width: 94px;
+				width: 27.6vw;
 			}
 		}
 
