@@ -247,18 +247,18 @@
 
 							<label for="phone" class="find__label">
 								<span class="find__label-span">Телефон</span>
-								<input type="number" id="phone" max="99999999999" class="find__input"
+								<input type="text" id="phone" oninput="this.value = this.value.slice(0, 11)" class="find__input"
 									placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
 							</label>
 
 							<label for="date-from" class="find__label">
 								<span class="find__label-span">Дата от</span>
-								<input id="date-from" type="date" max="9999-12-31" class="find__input" placeholder="ДД.ММ.ГГГГ">
+								<input id="date-from" type="date" max="9999-12-31" class="find__input colored" placeholder="ДД.ММ.ГГГГ">
 							</label>
 
 							<label for="date-to" class="find__label">
 								<span class="find__label-span">Дата до</span>
-								<input id="date-to" type="date" max="9999-12-31" class="find__input" placeholder="ДД.ММ.ГГГГ">
+								<input id="date-to" type="date" max="9999-12-31" class="find__input colored" placeholder="ДД.ММ.ГГГГ">
 							</label>
 
 							<label class="find__label find__label-comment" for="comment">

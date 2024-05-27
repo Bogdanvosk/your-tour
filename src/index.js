@@ -5,6 +5,20 @@ const links = document.querySelectorAll('.nav__menu-link')
 
 const tabs = document.querySelectorAll('.tour__tab')
 
+const dateInputs = document.querySelectorAll('.find__input[type="date"]')
+
+dateInputs.forEach(input => {
+	input.addEventListener('input', () => {
+		input.classList.add('colored')
+
+		let value = input.value
+		console.log('value', value)
+		if (value) {
+			input.classList.remove('colored')
+		}
+	})
+})
+
 const toggleNavbar = () => {
 	if (window.scrollY > 450) {
 		nav.classList.add('visible-nav')

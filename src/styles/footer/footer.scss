@@ -19,7 +19,7 @@
 		flex-wrap: wrap;
 
 		@media (max-width: $md) {
-			gap: 0.5rem;
+			gap: 0.4375rem;
 			justify-content: center;
 		}
 	}
@@ -27,17 +27,29 @@
 	&__socials {
 		display: flex;
 		align-items: center;
-		gap: 1.5625rem;
+		gap: 1.8625rem;
+
+		&-item:nth-child(1) {
+			margin-right: 0.4rem;
+		}
 
 		@media (max-width: $sm) {
 			gap: 0.9375rem;
+		}
+
+		@media (max-width: 359px) {
+			flex-direction: column;
 		}
 	}
 
 	&__socials-link {
 		display: flex;
 		align-items: center;
-		gap: 0.625rem;
+		gap: 0.925rem;
+
+		@media (max-width: $sm) {
+			gap: 0.525rem;
+		}
 
 		span {
 			transition: $main-transition;

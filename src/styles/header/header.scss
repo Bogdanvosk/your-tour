@@ -20,10 +20,14 @@
 .nav {
 	font-size: 1.25rem;
 	line-height: 1.42;
-	padding-top: 0.625rem;
+	padding-top: 1.55rem;
 
 	@media (max-width: $lg) {
-		padding-top: 1.875rem;
+		padding-top: 1.675rem;
+	}
+
+	@media (max-width: $lg) {
+		padding-top: 2.0313rem;
 	}
 
 	&__header--fixed {

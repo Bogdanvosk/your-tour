@@ -4,14 +4,15 @@
 		margin-top: 6.25rem;
 		padding: 0 1.575rem;
 		display: flex;
-		justify-content: center;
+		justify-content: space-around;
 		flex-wrap: wrap;
-		gap: 1vw;
+		gap: 1.4625vw 0.9625vw;
 
 		@media (max-width: $lg) {
-			column-gap: 2vw;
-			row-gap: 3vw;
+			column-gap: 1.953vw;
+			row-gap: 3.129vw;
 			padding: 0;
+			justify-content: center;
 		}
 
 		@media (max-width: $sm) {
@@ -22,19 +23,19 @@
 	}
 
 	&__item {
-		width: 23vw;
-		height: 15.6vw;
+		width: 23.125vw;
+		height: 15.677vw;
 		overflow: hidden;
 		border-radius: 2.6vw;
 
 		@media (max-width: $lg) {
-			width: 30.8vw;
+			width: 30.729vw;
 			height: 29.2vw;
 			border-radius: 4.9vw;
 		}
 
 		@media (max-width: $sm) {
-			width: 41.66vw;
+			width: 42.777vw;
 			height: 30.6vw;
 			border-radius: 5.6vw;
 		}
