@@ -1,17 +1,16 @@
 .head {
 	height: 100vh;
 	margin-top: 0;
-	background-image: url('../assets/images/header-bg.png');
+	background-image: url('../assets/images/header-bg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	color: $color-white;
-	padding-top: 13rem;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: relative;
-
-	@media (max-width: $sm) {
-		padding-top: 5.3rem;
-	}
 
 	&__title {
 		@media (max-width: $sm) {
@@ -23,10 +22,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-
-		@media (max-width: $sm) {
-			margin-top: 3.55rem;
-		}
+		padding-top: 4.5rem;
 	}
 
 	&__subtitle {

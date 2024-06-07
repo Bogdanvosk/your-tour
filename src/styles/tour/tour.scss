@@ -14,6 +14,8 @@
 	}
 
 	&__tab {
+		border: none;
+		background: transparent;
 		cursor: pointer;
 		font-weight: 700;
 		font-size: 1.4375rem;
@@ -84,7 +86,7 @@
 
 	&__card {
 		cursor: pointer;
-		z-index: 10;
+		z-index: 5;
 		position: relative;
 		padding: 3.5625rem 3.125rem;
 		color: $color-white;

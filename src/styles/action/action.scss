@@ -10,7 +10,7 @@
 		}
 
 		@media (max-width: $sm) {
-			gap: 2.125rem
+			gap: 2.125rem;
 		}
 	}
 
@@ -41,15 +41,17 @@
 	}
 
 	&__title {
-		@media (max-width: $sm) {
+		@media (max-width: $md) {
 			text-align: center;
 		}
 	}
 
 	&__text {
 		color: $color-gray-300;
-		@media (max-width: $sm) {
+		@media (max-width: $md) {
 			text-align: center;
+		}
+		@media (max-width: $sm) {
 			max-width: 291px;
 			margin: 0 auto;
 		}
