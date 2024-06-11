@@ -1,5 +1,4 @@
 .stories {
-
 	&__items {
 		margin-top: 6.25rem;
 
@@ -21,20 +20,23 @@
 
 	&__item {
 		cursor: pointer;
-		overflow: hidden;
+
 		position: relative;
-		border-radius: 50px;
-		padding: 3.75rem;
-		color: $color-white;
+
 		display: flex;
+		padding: 3.75rem;
 		flex-direction: column;
 		justify-content: space-between;
 
+		color: $color-white;
 		background: linear-gradient(
 			270deg,
 			rgba(0, 0, 0, 0) 0.01%,
 			rgba(0, 0, 0, 0.2) 100%
 		);
+		border-radius: 50px;
+
+		overflow: hidden;
 
 		@media (max-width: $md) {
 			padding: 1.875rem;
@@ -68,14 +70,15 @@
 	}
 
 	&__item-image {
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+
 		display: block;
 		width: 100%;
 		height: 100%;
-		z-index: -1;
-		position: absolute;
-		inset: 0;
+		
 		border-radius: 50px;
-		transition: $main-transition;
 		object-fit: cover;
 		object-position: 50% 50%;
 
@@ -103,9 +106,10 @@
 		line-height: 1.42;
 
 		@media (max-width: $sm) {
+			margin-left: 1.5rem;
+
 			font-size: 1rem;
 			line-height: 1.42;
-			margin-left: 1.5rem;
 		}
 
 		li {
@@ -114,9 +118,8 @@
 	}
 
 	&__item__footer {
-		margin-top: 14.0875rem;
-
 		display: flex;
+		margin-top: 14.0875rem;
 		align-items: center;
 
 		@media (max-width: $sm) {
@@ -133,8 +136,8 @@
 	}
 
 	&__item-links {
-		margin-left: auto;
 		display: flex;
+		margin-left: auto;
 		align-items: center;
 		gap: 2.1875rem;
 
@@ -146,6 +149,7 @@
 	&__item-button {
 		position: absolute;
 		left: 38px;
+
 		font-size: 1.375rem;
 
 		&::after {
@@ -153,25 +157,31 @@
 		}
 
 		@media (max-width: $sm) {
-			font-size: 0.9375rem;
 			left: 10px;
 			bottom: 24px;
+
+			font-size: 0.9375rem;
 		}
 	}
 
 	&__item-link {
 		position: relative;
+
 		transition: $main-transition;
 
 		&::after {
 			content: '';
-			width: 0;
-			height: 2px;
+
 			position: absolute;
 			left: 0;
 			bottom: -2px;
+
+			width: 0;
+			height: 2px;
+
 			background-color: $color-white;
 			opacity: 0;
+			
 			transition: $main-transition;
 		}
 

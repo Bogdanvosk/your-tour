@@ -1,26 +1,31 @@
 .header {
 	position: absolute;
-	width: 100%;
-	color: $color-white;
 	z-index: 10;
+
+	width: 100%;
+
+	color: $color-white;
 }
 
 .hidden-nav {
 	opacity: 0;
+
 	visibility: hidden;
 	pointer-events: none;
 }
 
 .visible-nav {
 	opacity: 1;
+
 	visibility: visible;
 	pointer-events: all;
 }
 
 .nav {
+	padding-top: 1.55rem;
+
 	font-size: 1.25rem;
 	line-height: 1.42;
-	padding-top: 1.55rem;
 
 	@media (max-width: $lg) {
 		padding-top: 1.675rem;
@@ -33,14 +38,17 @@
 	&__header--fixed {
 		@extend .hidden-nav;
 
+		position: fixed;
+		z-index: 20;
+
+		width: 100%;
+		padding: 1.75rem 0;
+
+		background-color: rgba(243, 239, 232, 0.6);
+
 		transition: $main-transition;
 
 		backdrop-filter: blur(54px);
-		background-color: rgba(243, 239, 232, 0.6);
-		padding: 1.75rem 0;
-		position: fixed;
-		width: 100%;
-		z-index: 20;
 	}
 
 	&__wrapper {
@@ -82,13 +90,17 @@
 	&__menu-item::before,
 	&__menu-phone::before {
 		content: '';
+
 		position: absolute;
-		left: 0;
 		bottom: 0;
+		left: 0;
+
 		width: 0;
-		opacity: 0;
 		height: 1px;
+
 		background-color: $color-white;
+		opacity: 0;
+
 		transition: $main-transition;
 	}
 
@@ -104,6 +116,7 @@
 	&__menu-item:hover::before,
 	&__menu-phone:hover::before {
 		width: 100%;
+		
 		opacity: 1;
 	}
 }
