@@ -3,7 +3,7 @@
 		margin-top: 6.25rem;
 
 		@media (max-width: $sm) {
-			margin-top: 3.125rem;
+			margin-top: 3.13rem;
 		}
 	}
 
@@ -11,7 +11,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		gap: 3.125rem;
+		gap: 3.13rem;
 
 		@media (max-width: $sm) {
 			gap: 1.25rem;
@@ -39,7 +39,7 @@
 		overflow: hidden;
 
 		@media (max-width: $md) {
-			padding: 1.875rem;
+			padding: 1.88rem;
 		}
 
 		@media (max-width: $sm) {
@@ -91,7 +91,7 @@
 
 	&__item-text {
 		max-width: 554px;
-		margin-top: 2.3125rem;
+		margin-top: 2.31rem;
 
 		@media (max-width: $sm) {
 			margin-top: 1.25rem;
@@ -119,18 +119,18 @@
 
 	&__item__footer {
 		display: flex;
-		margin-top: 14.0875rem;
+		margin-top: 14.09rem;
 		align-items: center;
 
 		@media (max-width: $sm) {
-			margin-top: 11.4375rem;
+			margin-top: 11.44rem;
 		}
 
 		&--big {
-			margin-top: 7.1875rem;
+			margin-top: 7.19rem;
 
 			@media (max-width: $sm) {
-				margin-top: 5.625rem;
+				margin-top: 5.63rem;
 			}
 		}
 	}
@@ -139,7 +139,7 @@
 		display: flex;
 		margin-left: auto;
 		align-items: center;
-		gap: 2.1875rem;
+		gap: 2.19rem;
 
 		@media (max-width: 540px) {
 			@include hidden;
@@ -150,7 +150,7 @@
 		position: absolute;
 		left: 38px;
 
-		font-size: 1.375rem;
+		font-size: 1.38rem;
 
 		&::after {
 			right: 19px;
@@ -160,7 +160,7 @@
 			left: 10px;
 			bottom: 24px;
 
-			font-size: 0.9375rem;
+			font-size: 0.94rem;
 		}
 	}
 

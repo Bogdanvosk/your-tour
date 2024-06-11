@@ -2,7 +2,7 @@
 	&__items {
 		display: flex;
 		margin: 6.25rem auto 0;
-		padding: 0 1.575rem;
+		padding: 0 1.58rem;
 		justify-content: space-around;
 		flex-wrap: wrap;
 		gap: 1.4625vw 0.9625vw;
@@ -10,34 +10,34 @@
 		@media (max-width: $lg) {
 			padding: 0;
 			justify-content: center;
-			column-gap: 1.953vw;
-			row-gap: 3.129vw;
+			column-gap: 1.95vw;
+			row-gap: 3.13vw;
 		}
 
 		@media (max-width: $sm) {
-			margin-top: 3.125rem;
+			margin-top: 3.13rem;
 			column-gap: 2.77vw;
 			row-gap: 5vw;
 		}
 	}
 
 	&__item {
-		width: 23.125vw;
-		height: 15.677vw;
+		width: 23.13vw;
+		height: 15.68vw;
 
 		border-radius: 2.6vw;
 
 		overflow: hidden;
 
 		@media (max-width: $lg) {
-			width: 30.729vw;
+			width: 30.73vw;
 			height: 29.2vw;
 
 			border-radius: 4.9vw;
 		}
 
 		@media (max-width: $sm) {
-			width: 42.777vw;
+			width: 42.78vw;
 			height: 30.6vw;
 
 			border-radius: 5.6vw;

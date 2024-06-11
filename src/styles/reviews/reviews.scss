@@ -4,7 +4,7 @@
 		margin: 0 auto;
 
 		@media (max-width: 359px) {
-			font-size: 1.875rem;
+			font-size: 1.88rem;
 		}
 	}
 
@@ -12,10 +12,10 @@
 		display: flex;
 		margin-top: 6.25rem;
 		justify-content: center;
-		gap: 1.875rem;
+		gap: 1.88rem;
 
 		@media (max-width: $lg) {
-			gap: 1.125rem;
+			gap: 1.13rem;
 		}
 
 		@media (max-width: $md) {
@@ -24,8 +24,8 @@
 		}
 
 		@media (max-width: $sm) {
-			margin-top: 3.125rem;
-			gap: 1.125rem;
+			margin-top: 3.13rem;
+			gap: 1.13rem;
 		}
 	}
 
@@ -60,7 +60,7 @@
 
 	&__author {
 		display: flex;
-		margin-top: 4.375rem;
+		margin-top: 4.38rem;
 		justify-content: space-between;
 		align-items: center;
 

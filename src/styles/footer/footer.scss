@@ -1,11 +1,11 @@
 .footer {
 	margin-top: 135px;
-	padding: 1.875rem 0;
+	padding: 1.88rem 0;
 	
 	background-color: $color-beige-200;
 
 	@media (max-width: $sm) {
-		margin-top: 4.6875rem;
+		margin-top: 4.69rem;
 		padding: 1.25rem 0;
 	}
 
@@ -21,21 +21,21 @@
 
 		@media (max-width: $md) {
 			justify-content: center;
-			gap: 0.4375rem;
+			gap: 0.44rem;
 		}
 	}
 
 	&__socials {
 		display: flex;
 		align-items: center;
-		gap: 1.8625rem;
+		gap: 1.86rem;
 
 		&-item:nth-child(1) {
 			margin-right: 0.4rem;
 		}
 
 		@media (max-width: $sm) {
-			gap: 0.9375rem;
+			gap: 0.94rem;
 		}
 
 		@media (max-width: 359px) {
@@ -46,10 +46,10 @@
 	&__socials-link {
 		display: flex;
 		align-items: center;
-		gap: 0.925rem;
+		gap: 0.93rem;
 
 		@media (max-width: $sm) {
-			gap: 0.525rem;
+			gap: 0.53rem;
 		}
 
 		span {

@@ -1,15 +1,15 @@
 .tour {
 	&__tabs {
 		display: flex;
-		margin-top: 2.1875rem;
+		margin-top: 2.19rem;
 		align-items: center;
 		justify-content: center;
 		flex-wrap: wrap;
-		gap: 1.875rem;
+		gap: 1.88rem;
 
 		@media (max-width: $sm) {
-			margin-top: 1.875rem;
-			gap: 0.625rem;
+			margin-top: 1.88rem;
+			gap: 0.63rem;
 		}
 	}
 
@@ -17,7 +17,7 @@
 		position: relative;
 
 		font-weight: 700;
-		font-size: 1.4375rem;
+		font-size: 1.43rem;
 		line-height: 1.22;
 
 		background: transparent;
@@ -74,13 +74,13 @@
 		margin-top: 6.25rem;
 		grid-template-columns: repeat(3, 370px);
 		grid-template-rows: repeat(2, 533px);
-		gap: 1.875rem;
+		gap: 1.88rem;
 
 		@media (max-width: $xl) {
 			grid-template-columns: repeat(2, minmax(450px, 1fr));
 			grid-template-rows: repeat(3, 533px);
 			place-content: center;
-			gap: 1.125rem;
+			gap: 1.13rem;
 		}
 
 		@media (max-width: $md) {
@@ -89,7 +89,7 @@
 		}
 
 		@media (max-width: $sm) {
-			margin-top: 3.125rem;
+			margin-top: 3.13rem;
 		}
 	}
 
@@ -99,7 +99,7 @@
 		position: relative;
 		z-index: 5;
 
-		padding: 3.5625rem 3.125rem;
+		padding: 3.56rem 3.13rem;
 
 		color: $color-white;
 
@@ -112,7 +112,7 @@
 		@media (max-width: $sm) {
 			width: 100%;
 			height: 318px;
-			padding: 1.5625rem;
+			padding: 1.56rem;
 		}
 	}
 
@@ -185,7 +185,7 @@
 		margin-top: 1rem;
 
 		@media (max-width: $sm) {
-			margin-top: 0.8125rem;
+			margin-top: 0.81rem;
 		}
 	}
 
@@ -196,14 +196,14 @@
 
 		padding: 7px 62px 6px 19px;
 		
-		font-size: 1.375rem;
+		font-size: 1.38rem;
 
 		@media (max-width: $sm) {
 			left: 6px;
 			bottom: 18px;
 
-			font-size: 0.9375rem;
-			line-height: 1.5625rem;
+			font-size: 0.9rem;
+			line-height: 1.56rem;
 		}
 	}
 }
