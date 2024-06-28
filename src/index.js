@@ -1,7 +1,10 @@
 import './styles/main.scss'
 
-const fixedHeaderNav = document.querySelector('.nav__header--fixed')
+const header = document.querySelector('.header')
 const fixedHeaderLinks = document.querySelectorAll('.nav__menu-link')
+
+const logoWhiteImage = document.querySelector('.nav__logo-image--white')
+const logoBlackImage = document.querySelector('.nav__logo-image--black')
 
 const tourSectionTabs = document.querySelectorAll('.tour__tab')
 
@@ -20,9 +23,13 @@ dateInputs.forEach(input => {
 
 const toggleNavbar = () => {
 	if (window.scrollY > 450) {
-		fixedHeaderNav.classList.add('visible-nav')
+		header.classList.add('header--fixed')
+		logoWhiteImage.classList.remove('visible-logo')
+		logoBlackImage.classList.add('visible-logo')
 	} else {
-		fixedHeaderNav.classList.remove('visible-nav')
+		header.classList.remove('header--fixed')
+		logoWhiteImage.classList.add('visible-logo')
+		logoBlackImage.classList.remove('visible-logo')
 	}
 }
 

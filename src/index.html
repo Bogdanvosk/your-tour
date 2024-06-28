@@ -19,46 +19,6 @@
 
 
 	<header class="header">
-		<nav class="nav nav__header nav__header--fixed">
-			<div class="nav__wrapper nav__wrapper--fixed">
-				<div class="nav__logo">
-					<a href="#" class="nav__logo-link">
-						<picture>
-							<source srcset="./assets/images/logo-black-640.svg" media="(max-width: 640px)">
-							<source srcset="./assets/images/logo-black.svg" media="(min-width: 640px)">
-							<img class="nav__logo-image" src="./assets/images/logo.svg" alt="logo">
-						</picture>
-					</a>
-				</div>
-				<div class="nav__menu">
-					<ul class="nav__menu-list">
-						<li class="nav__menu-item nav__menu-item--fixed">
-							<a href="#tour" class="nav__menu-link">
-								Туры
-							</a>
-						</li>
-						<li class="nav__menu-item nav__menu-item--fixed">
-							<a href="#find" class="nav__menu-link">
-								Создать тур
-							</a>
-						</li>
-						<li class="nav__menu-item nav__menu-item--fixed">
-							<a href="#reviews" class="nav__menu-link">
-								Отзывы
-							</a>
-						</li>
-						<li class="nav__menu-item nav__menu-item--fixed">
-							<a href="#stories" class="nav__menu-link">
-								Истории
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="nav__menu-phone nav__menu-phone--fixed">
-					<a href="tel:+79999999999">+7 999 999 99 99</a>
-				</div>
-			</div>
-		</nav>
 		<div class="container">
 			<nav class="nav nav__header">
 				<div class="nav__wrapper">
@@ -67,7 +27,12 @@
 							<picture>
 								<source srcset="./assets/images/logo-640.svg" media="(max-width: 640px)">
 								<source srcset="./assets/images/logo.svg" media="(min-width: 640px)">
-								<img class="nav__logo-image" src="./assets/images/logo.svg" alt="logo">
+								<img class="nav__logo-image nav__logo-image--white visible-logo" src="./assets/images/logo.svg" alt="logo">
+							</picture>
+							<picture>
+								<source srcset="./assets/images/logo-black-640.svg" media="(max-width: 640px)">
+								<source srcset="./assets/images/logo-black.svg" media="(min-width: 640px)">
+								<img class="nav__logo-image nav__logo-image--black" src="./assets/images/logo-black.svg" alt="logo">
 							</picture>
 						</a>
 					</div>
